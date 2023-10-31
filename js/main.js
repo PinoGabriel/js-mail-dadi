@@ -40,9 +40,11 @@ btn.addEventListener ("click", function() {
 
     if (userdado > botdado) {    
         result.innerText = "Hai vinto";
+        result.classList.remove("red")
         result.classList.add("green"); 
     } else {
         result.innerText = "Hai perso"; 
+        result.classList.remove("green")
         result.classList.add("red"); 
     }
 
